@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Man Language Tutoring</title>
+<style>
+body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333;}
+a {text-decoration:none; color:#0077cc;}
+header {background:#0077cc; color:#fff; padding:20px 0; text-align:center;}
+header h1 {margin:0; font-size:2.2em;}
+nav {margin-top:10px;}
+nav a {margin:0 15px; color:#fff; font-weight:bold;}
+section {padding:40px 20px; max-width:1000px; margin:auto;}
+.services, .testimonials {display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px;}
+.card {border:1px solid #ddd; border-radius:8px; padding:20px; width:300px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+footer {background:#f4f4f4; text-align:center; padding:20px;}
+button {background:#0077cc; color:white; padding:10px 20px; border:none; border-radius:6px; cursor:pointer; font-size:1em;}
+button:hover {background:#005fa3;}
+form input, form textarea, form select {width:100%; padding:10px; margin:8px 0; border-radius:4px; border:1px solid #ccc; box-sizing:border-box;}
+.venmo-button {margin-top:20px; display:inline-block; text-align:center;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Big Man Language Tutoring</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m Big Man, a passionate language tutor for 8 languages. I help students master pronunciation, grammar, and vocabulary systematically, ensuring complete understanding before moving forward.</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Beginner Courses</h3>
+      <p>Foundations: pronunciation, alphabet, essential grammar, and core vocabulary.</p>
+    </div>
+    <div class="card">
+      <h3>Intermediate & Advanced Courses</h3>
+      <p>Expand grammar, vocabulary, and conversational skills with reading, writing, and comprehension exercises.</p>
+    </div>
+    <div class="card">
+      <h3>One-on-One Tutoring</h3>
+      <p>Personalized lessons tailored to your learning speed and goals for accelerated mastery.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>"Big Man’s teaching method is amazing! I can finally speak French confidently after just a few months."</p>
+      <strong>- Student A</strong>
+    </div>
+    <div class="card">
+      <p>"I learned grammar and vocabulary in a way that actually makes sense. Highly recommend!"</p>
+      <strong>- Student B</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Have questions or want to start lessons? Fill out the form below and I’ll get back to you.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<section id="booking">
+  <h2>Book a Lesson</h2>
+  <p>Select a language, lesson type, date, and time:</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="bookingForm">
+    <label for="language">Language:</label>
+    <select id="language" name="language" required>
+      <option value="english">English</option>
+      <option value="spanish">Spanish</option>
+      <option value="french">French</option>
+      <option value="portuguese">Portuguese</option>
+      <option value="italian">Italian</option>
+      <option value="russian">Russian</option>
+      <option value="norwegian">Norwegian</option>
+      <option value="german">German</option>
+    </select>
+
+    <label for="lessonType">Lesson Type:</label>
+    <select id="lessonType" name="lessonType" required>
+      <option value="30min">30 minutes - $25</option>
+      <option value="60min">60 minutes - $45</option>
+      <option value="90min">90 minutes - $65</option>
+    </select>
+
+    <label for="date">Choose Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Choose Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+  <div class="venmo-button">
+    <p>Pay securely via Venmo after booking:</p>
+    <a href="https://venmo.com/MasenKBates" target="_blank">
+      <button>Pay with Venmo</button>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Big Man Language Tutoring. All rights reserved.</p>
+</footer>
+
+<script>
+// Optional: confirmation popup after booking
+const bookingForm = document.getElementById('bookingForm');
+bookingForm.addEventListener('submit', function(e){
+  alert("Thank you! Your booking request has been sent. Please complete your payment via Venmo.");
+});
+</script>
+
+</body>
+</html>
